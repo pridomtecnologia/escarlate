@@ -1,0 +1,15 @@
+body { margin: 0; background: #000; }
+
+.custom-dots li { margin: 0 5px; }
+.custom-dots li button { padding: 0; }
+.custom-dots li .dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.9);
+  background: transparent;
+}
+.custom-dots li.slick-active .dot {
+  background: #fff; border-color: #fff;
+}
+
+/* garante que o carrossel fique atrás do header deslocado */
+.slick-slider, .slick-list, .slick-track { height: 100vh; }
