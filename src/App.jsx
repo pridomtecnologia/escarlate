@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { LanguageProvider } from "./i18n/LanguageContext";
 import Header from "./components/Header";
 import Carousel from "./components/Carousel";
+import SobreEscarlate from "./components/SobreEscarlate";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./App.css"; // Aqui colocaremos o CSS do preloader
 import logo from "./assets/Escarlate_LogoTransparente-1.png";
@@ -25,6 +26,7 @@ export default function App() {
         <>
           <Header />
           <Carousel />
+          <SobreEscarlate />
           <LanguageSwitcher />
         </>
       )}

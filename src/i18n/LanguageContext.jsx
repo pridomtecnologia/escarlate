@@ -7,26 +7,24 @@ const labels = {
   pt: {
     menu: [
       "CONHEÇA A ESCARLATE",
-      "DIRETORES",
+      "EQUIPE",
       "PUBLICIDADE",
       "ENTRETENIMENTO",
-      "NOTÍCIAS",
+      "BLOG",
       "SERVIÇOS",
       "CONTATO"
     ],
-    film: "Filme",
   },
   en: {
     menu: [
       "ABOUT ESCARLATE",
-      "DIRECTORS",
+      "TEAM",
       "ADVERTISING",
       "ENTERTAINMENT",
-      "NEWS",
+      "BLOG",
       "SERVICES",
       "CONTACT"
     ],
-    film: "Film",
   },
 };
 

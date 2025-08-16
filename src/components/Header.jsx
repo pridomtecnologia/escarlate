@@ -22,7 +22,8 @@ export default function Header() {
         elevation={trigger ? 4 : 0}
         sx={{
           top: 0,
-          backgroundColor: trigger ? "rgba(0,0,0,0.85)" : "transparent",
+          // backgroundColor: trigger ? "rgba(0,0,0,0.85)" : "transparent",
+          backgroundColor: trigger ? "rgba(0,0,0,0.85)" : "rgba(0, 0, 0, 0.38)",
           transition: "background-color .3s ease",
           px: { xs: 1, md: 3 },
         }}
