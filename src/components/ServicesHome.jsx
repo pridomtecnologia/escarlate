@@ -6,6 +6,7 @@ import producaoAoVivo from "../assets/images/producaoAoVivo.jpg";
 import producaoFoto from "../assets/images/producaoFoto.jpg";
 import producaoVideo from "../assets/images/producaoVideo.jpg";
 import cobertura from "../assets/images/cobertura.jpg";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const Item = styled(Box)(({ theme }) => ({
   height: '380px',
@@ -18,37 +19,15 @@ const Item = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-end',
-  margin: 'auto', // garante centralização
+  margin: 'auto',
 }));
 
-const services = [
-  {
-    title: "Produção de Vídeo",
-    description:
-      "Vídeos institucionais, campanhas publicitárias, conteúdo, videoaulas, palestras, depoimentos, motion graphics e muito mais. Com iluminação, captação de áudio, direção, tratamento de cor/áudio e edição finalizada.",
-    image: producaoVideo,
-  },
-  {
-    title: "Produção de Fotos",
-    description:
-      "Fotos comerciais, corporativas, institucionais, conteúdo e muitos outros. Processo completo de produção de fotos em alta qualidade, com iluminação e direção.",
-    image: producaoFoto,
-  },
-  {
-    title: "Transmissão ao vivo",
-    description:
-      "Transmissão ao vivo de shows, eventos corporativos, lançamentos, webinários e muitos outros. Plataformas: Youtube, Instagram, Facebook, Twitch, entre outras. Utilização de múltiplas câmeras.",
-    image: producaoAoVivo,
-  },
-  {
-    title: "Cobertura de Evento",
-    description:
-      "Fotos e vídeos de eventos corporativos, esportivos, feiras, exposições, palestras, festas, shows e muito mais. Cobertura simultânea nos stories, gravação na íntegra e edição em tempo real.",
-    image: cobertura,
-  },
-];
+// mantém as imagens separadas para cada serviço
+const images = [ producaoVideo, producaoFoto, producaoAoVivo, cobertura ];
 
 export default function ServicesHome() {
+  const { t } = useLanguage();
+
   return (
     <Box
       sx={{
@@ -67,20 +46,19 @@ export default function ServicesHome() {
         gutterBottom
         sx={{ color: "#000", fontWeight: "bold", mb: 4 }}
       >
-        Nossos Serviços
+        {t("servicesTitle")}
       </Typography>
 
       <Grid container spacing={3} justifyContent="center">
-        {services.map((service, index) => (
+        {t("services").map((service, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
             <Item
               sx={{
-                backgroundImage: `url(${service.image})`,
+                backgroundImage: `url(${images[index]})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              {/* Gradiente no rodapé */}
               <Box
                 sx={{
                   position: "absolute",
