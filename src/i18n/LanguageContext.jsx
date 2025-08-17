@@ -6,7 +6,7 @@ export const useLanguage = () => useContext(LanguageContext);
 const labels = {
   pt: {
     menu: [
-      "CONHEÇA A ESCARLATE",
+      "HOME",
       "EQUIPE",
       "PUBLICIDADE",
       "ENTRETENIMENTO",
@@ -17,7 +17,7 @@ const labels = {
   },
   en: {
     menu: [
-      "ABOUT ESCARLATE",
+      "HOME",
       "TEAM",
       "ADVERTISING",
       "ENTERTAINMENT",

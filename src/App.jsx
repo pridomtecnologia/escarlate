@@ -4,8 +4,12 @@ import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import SobreEscarlate from "./components/SobreEscarlate";
 import LanguageSwitcher from "./components/LanguageSwitcher";
-import "./App.css"; // Aqui colocaremos o CSS do preloader
+import "./App.css";
 import logo from "./assets/Escarlate_LogoTransparente-1.png";
+import PortfolioSection from "./components/PortfolioSection";
+import NossosNumeros from "./components/NossosNumeros";
+import ServicesHome from "./components/ServicesHome";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +31,10 @@ export default function App() {
           <Header />
           <Carousel />
           <SobreEscarlate />
+          <PortfolioSection />
+          <NossosNumeros />
+          <ServicesHome />
+          <Footer />
           <LanguageSwitcher />
         </>
       )}
