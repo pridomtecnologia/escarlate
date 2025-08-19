@@ -12,7 +12,7 @@ export const useLanguage = () => useContext(LanguageContext);
 
 const labels = {
   pt: {
-    menu: [ "HOME","EQUIPE","PUBLICIDADE","ENTRETENIMENTO","BLOG","SERVIÇOS","CONTATO" ],
+    menu: [ "HOME","EQUIPE", "ENTRETENIMENTO", "INTERNACIONAL", "NOTÍCIAS","CONTATO" ],
     nossosNumeros: "Nossos Números",
     stats: [
       { number: "900", label: "Projetos realizados" },
@@ -49,7 +49,9 @@ const labels = {
       // contact: "CONTATO",
       officeHours: "Horário de Atendimento",
       officeDays: "Segunda a sexta das 9h às 18h",
-      social: "REDES SOCIAIS"
+      social: "REDES SOCIAIS",
+      etica: 'Código de Ética',
+      lerEtica: 'Download'
     },
     teamTitle: "Nossa Equipe",
     team: [
@@ -98,7 +100,7 @@ const labels = {
     ]
   },
   en: {
-    menu: [ "HOME","TEAM","ADVERTISING","ENTERTAINMENT","BLOG","SERVICES","CONTACT" ],
+    menu: [ "HOME","TEAM","ENTERTAINMENT","INTERNATIONAL", "NEWS","CONTACT" ],
     nossosNumeros: "Our Numbers",
     stats: [
       { number: "900", label: "Projects Completed" },
@@ -135,7 +137,9 @@ const labels = {
       // contact: "CONTACT",
       officeHours: "Opening Hours",
       officeDays: "Monday to Friday from 9am to 6pm",
-      social: "SOCIAL MEDIA"
+      social: "SOCIAL MEDIA",
+      etica: 'Code of Ethics',
+      lerEtica: 'Download'
     },
     teamTitle: "Our Team",
     team:[

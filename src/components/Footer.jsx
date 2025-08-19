@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { useLanguage } from "../i18n/LanguageContext";
 
 export default function Footer() {
@@ -86,6 +87,25 @@ export default function Footer() {
               <Facebook />
             </IconButton>
           </Box>
+        </Grid>
+
+        {/* Código de Ética */}
+        <Grid item xs={12} sm={6} md={3}>
+          <Typography variant="h6" fontWeight="bold" gutterBottom>
+            {t("footer.etica")}
+          </Typography>
+            <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+              <IconButton
+                // href="https://www.linkedin.com/company/estudioescarlate/"
+                // target="_blank"
+                color="inherit"
+              >
+                <PictureAsPdfIcon />
+              </IconButton>
+              <Typography variant="p" fontWeight="bold" gutterBottom>
+                {t("footer.lerEtica")}
+              </Typography>
+            </Box>
         </Grid>
       </Grid>
     </Box>

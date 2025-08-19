@@ -4,9 +4,8 @@ import { LanguageProvider } from "./i18n/LanguageContext";
 import Header from "./components/Header";
 import Home from "./pages/home/page";
 import Equipe from "./pages/equipe/page";
-// import Publicidade from "./pages/Publicidade";
-// import Entretenimento from "./pages/Entretenimento";
-// import Blog from "./pages/Blog";
+import Entretenimento from "./pages/entretenimento/page";
+import Internacional from "./pages/internacional/page";
 // import Servicos from "./pages/Servicos";
 // import Contato from "./pages/Contato";
 import "./App.css";
@@ -32,9 +31,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/equipe" element={<Equipe />} />
-            {/* <Route path="/publicidade" element={<Publicidade />} />
             <Route path="/entretenimento" element={<Entretenimento />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/internacional" element={<Internacional />} />
+            {/* 
             <Route path="/servicos" element={<Servicos />} />
             <Route path="/contato" element={<Contato />} /> */}
           </Routes>
