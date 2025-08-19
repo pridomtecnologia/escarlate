@@ -35,7 +35,7 @@ export default function Header() {
           {/* Menu Desktop */}
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3, alignItems: "center" }}>
             {menuItems.map((item) => {
-              const path = item.toLowerCase(); // ex: "EQUIPE" -> "/equipe"
+              const path = item.toLowerCase();
               return (
                 <Button
                   key={item}

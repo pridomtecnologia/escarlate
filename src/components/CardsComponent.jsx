@@ -6,11 +6,14 @@ import Escarlategisele from "../assets/images/equipe/escarlate_gisele.jpg";
 import Escarlatepaula from "../assets/images/equipe/escarlate_paula-1-1.jpg";
 import Escarlatepriscila from "../assets/images/equipe/escarlate_priscila.png";
 import Escarlatetatiana from "../assets/images/equipe/escarlate_tatiana.jpg";
-import { useLanguage } from "../i18n/LanguageContext"; 
+import { useLanguage } from "../i18n/LanguageContext";
 
 export default function CardsComponent() {
-  const { lang } = useLanguage();
 
+const { lang, t } = useLanguage();
+
+  // const team = t("team");
+  
   // Dados da equipe
   const team = [
     {
@@ -59,148 +62,182 @@ export default function CardsComponent() {
 
   return (
     <Container
-  maxWidth="lg"
-  sx={{
-    py: 6,
-    pt: { xs: 12, md: 16 },
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center", // garante centralização horizontal
-  }}
->
-  <Typography
-    variant="h4"
-    align="center"
-    sx={{
-      fontWeight: 300,
-      letterSpacing: 2,
-      mb: 6,
-      fontFamily: "Roboto, sans-serif",
-    }}
-  >
-    Nossa Equipe
-  </Typography>
-
-  {team.map((member, index) => (
-    <Grid
-      container
-      spacing={6}
-      alignItems="center"
-      justifyContent="center" // <- centraliza o conteúdo dentro do grid
-      key={index}
-      sx={{ mb: 8, maxWidth: "1200px" }} 
+      maxWidth="lg"
+      sx={{
+        py: 6,
+        pt: { xs: 12, md: 16 },
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
     >
-      {index % 2 === 0 ? (
-        <>
-          {/* Texto à esquerda */}
-          <Grid item xs={12} md={7} size={{ xs: 10, md: 8 }}>
-            <Typography
-              variant="h5"
-              sx={{ fontWeight: 300, mb: 2, color: "#ED0220" }}
-            >
-              {member.name}
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                mb: 3,
-                color: "text.secondary",
-                fontStyle: "italic",
-                fontSize: "1rem",
-              }}
-            >
-              {member.role}
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                mb: 3,
-                lineHeight: 1.6,
-                textAlign: "justify",
-                textAlignLast: "left",
-              }}
-            >
-              {member.bio}
-            </Typography>
-          </Grid>
+      <Typography
+        variant="h4"
+        align="center"
+        sx={{
+          fontWeight: 300,
+          letterSpacing: 2,
+          mb: 6,
+          fontFamily: "Roboto, sans-serif",
+        }}
+      >
+        {t("teamTitle")}
+      </Typography>
 
-          {/* Imagem à direita */}
-          <Grid
-            item
-            xs={12}
-            md={5}
-            sx={{ display: "flex", justifyContent: "center" }}
+      {t("team").map((member, index) => (
+        <Grid
+          container
+          spacing={6}
+          alignItems="center"
+          justifyContent="center"
+          key={index}
+          sx={{ mb: 8, maxWidth: "1200px" }} 
+        >
+          {index % 2 === 0 ? (
+
+            <>
+              {/* Texto à esquerda */}
+              <Grid item xs={12} md={7} size={{ xs: 10, md: 8 }}>
+                <Typography
+                  variant="h5"
+                  sx={{ fontWeight: 300, mb: 2, color: "#ED0220" }}
+                >
+                  {member.name}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    mb: 3,
+                    color: "text.secondary",
+                    fontStyle: "italic",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {member.role}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    mb: 3,
+                    lineHeight: 1.6,
+                    textAlign: "justify",
+                    textAlignLast: "left",
+                  }}
+                >
+                  {member.bio}
+                </Typography>
+              </Grid>
+
+              {/* Imagem à direita */}
+              <Grid
+                item
+                xs={12}
+                md={5}
+                sx={{ display: "flex", justifyContent: "center" }}
+                
+              >
+                <Box
+                  component="img"
+                  src={member.image}
+                  alt={member.name}
+                  sx={{
+                    width: "100%",
+                    maxWidth: "400px",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Grid>
+            </>
+
+          ) : (
+
+            <>
             
-          >
-            <Box
-              component="img"
-              src={member.image}
-              alt={member.name}
-              sx={{
-                width: "100%",
-                maxWidth: "400px",
-                borderRadius: "12px",
-              }}
-            />
-          </Grid>
-        </>
-      ) : (
-        <>
-          {/* Imagem à esquerda */}
-          <Grid
-            item
-            xs={12}
-            md={5}
-            sx={{ display: "flex", justifyContent: "center" }}
-          >
-            <Box
-              component="img"
-              src={member.image}
-              alt={member.name}
-              sx={{
-                width: "100%",
-                maxWidth: "400px",
-                borderRadius: "12px",
-              }}
-            />
-          </Grid>
+              {/* Imagem à esquerda */}
+              <Grid
+                item
+                xs={12}
+                md={5}
+                sx={{ 
+                  display: "flex", 
+                  justifyContent: "center",
+                  "@media (max-width: 1200px)": {
+                    display: 'none'
+                  }
+                }}
+              >
+                <Box
+                  component="img"
+                  src={member.image}
+                  alt={member.name}
+                  sx={{
+                    width: "100%",
+                    maxWidth: "400px",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Grid>
 
-          {/* Texto à direita */}
-          <Grid item xs={12} md={7} size={{ xs: 10, md: 8 }}>
-            <Typography
-              variant="h5"
-              sx={{ fontWeight: 300, mb: 2, color: "#ED0220" }}
-            >
-              {member.name}
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                mb: 3,
-                color: "text.secondary",
-                fontStyle: "italic",
-                fontSize: "1rem",
-              }}
-            >
-              {member.role}
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                mb: 3,
-                lineHeight: 1.6,
-                textAlign: "justify",
-                textAlignLast: "left",
-              }}
-            >
-              {member.bio}
-            </Typography>
-          </Grid>
-        </>
-      )}
-    </Grid>
-  ))}
-</Container>
+              {/* Texto à direita */}
+              <Grid item xs={12} md={7} size={{ xs: 10, md: 8 }} >
+                <Typography
+                  variant="h5"
+                  sx={{ fontWeight: 300, mb: 2, color: "#ED0220" }}
+                >
+                  {member.name}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    mb: 3,
+                    color: "text.secondary",
+                    fontStyle: "italic",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {member.role}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    mb: 3,
+                    lineHeight: 1.6,
+                    textAlign: "justify",
+                    textAlignLast: "left",
+                  }}
+                >
+                  {member.bio}
+                </Typography>
+              </Grid>
 
+              <Grid
+                item
+                xs={12}
+                md={5}
+                sx={{ 
+                  display: "flex", 
+                  justifyContent: "center",
+                  "@media (min-width: 1200px)": {
+                    display: 'none'
+                  }
+                }}
+              >
+                <Box
+                  component="img"
+                  src={member.image}
+                  alt={member.name}
+                  sx={{
+                    width: "100%",
+                    maxWidth: "400px",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Grid>
+            </>
+            
+          )}
+        </Grid>
+      ))}
+    </Container>
   );
 }
