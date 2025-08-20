@@ -16,91 +16,48 @@ import juiza from "../assets/images/juiza.png";
 import po from "../assets/images/po.jpg";
 import Senha from "../assets/images/Senha.png";
 import SylvieCapa from "../assets/images/SylvieCapa.png";
+import noticia1 from "../assets/images/noticia1.jpg";
+import noticia2 from "../assets/images/noticia2.jpg";
+import noticia3 from "../assets/images/noticia3.webp";
+import noticia4 from "../assets/images/noticia4.jpg";
+import noticia5 from "../assets/images/noticia5.webp";
 
 const shows = [
   {
-    title: "21 Tiros na Justiça",
-    img: tiros,
-    description: "Documentário sobre o caso dos 21 tiros que chocou o país, investigando as falhas do sistema judicial.",
-    newsUrl: "https://exemplo.com/noticia/21-tiros"
+    title: "Salto Preciso",
+    img: noticia1,
+    description: "História de Joana",
+    newsUrl: "https://www.escarlateweb.com/wp-content/uploads/2022/09/19a.jpg"
   },
   {
-    title: "De Perto",
+    title: "De Perto ela não é normal",
     img: DePerto,
-    description: "Uma análise profunda dos casos de violência policial nas comunidades carentes.",
-    newsUrl: "https://exemplo.com/noticia/de-perto"
+    description: "pressionada por tudo e todos, Suzie (Suzana Pires)",
+    newsUrl: "https://www.adorocinema.com/filmes/filme-261145/"
   },
   {
-    title: "A culpa",
-    img: aculpa,
-    description: "Investigação sobre como a culpa é atribuída em casos complexos do sistema judicial.",
-    newsUrl: "https://exemplo.com/noticia/a-culpa"
+    title: "Monica",
+    img: noticia2,
+    description: "'Monica' recebe o prêmio ARCA em Veneza",
+    newsUrl: "https://rollingstone.com.br/noticia/monica/"
   },
   {
     title: "Chico Mendes",
-    img: chicomendes,
-    description: "A história do ambientalista Chico Mendes e seu legado na defesa da Amazônia.",
-    newsUrl: "https://exemplo.com/noticia/chico-mendes"
+    img: noticia3,
+    description: "A história do ambientalista Chico Mendes",
+    newsUrl: "https://oglobo.globo.com/blogs/ancelmo-gois/post/2023/04/a-vida-do-ambientalista-chico-mendes-que-morreu-assassinado-em-xapuri-no-acre-vai-virar-filme.ghtml"
   },
   {
-    title: "Nascidos",
-    img: nascidos,
-    description: "Documentário sobre crianças nascidas em sistema carcerário e seus desafios.",
-    newsUrl: "https://exemplo.com/noticia/nascidos"
+    title: "Vencedor do Urso de Ouro",
+    img: noticia4,
+    description: "Vencedor do Urso de Ouro terá Première na mostra de SP",
+    newsUrl: "https://www.marciapiovesan.com.br/cinema/vencedor-do-urso-de-ouro-no-festival-de-berlim-synonyms-tera-premiere-na-mostra-de-sao-paulo.phtml"
   },
   {
-    title: "Sequestro",
-    img: sequestro,
-    description: "Análise de casos de sequestro relâmpago e a resposta das autoridades.",
-    newsUrl: "https://exemplo.com/noticia/sequestro"
-  },
-  {
-    title: "O Caso Celso Daniel",
-    img: ocasocelsodaniel,
-    description: "A investigação do assassinato do prefeito Celso Daniel e suas ramificações políticas.",
-    newsUrl: "https://exemplo.com/noticia/caso-celso-daniel"
-  },
-  {
-    title: "A gente do medo",
-    img: agentedomedo,
-    description: "Como o medo é utilizado como mecanismo de controle em diversas esferas da sociedade.",
-    newsUrl: "https://exemplo.com/noticia/gente-do-medo"
-  },
-  {
-    title: "Vozes",
-    img: vozes,
-    description: "As vozes silenciadas do sistema judicial e suas histórias não contadas.",
-    newsUrl: "https://exemplo.com/noticia/vozes"
-  },
-  {
-    title: "Guará",
-    img: GuaraCapa,
-    description: "A operação Guará e seu impacto no combate ao crime organizado.",
-    newsUrl: "https://exemplo.com/noticia/guara"
-  },
-  {
-    title: "Juíza",
-    img: juiza,
-    description: "Perfil de uma juíza que desafia o sistema para fazer justiça.",
-    newsUrl: "https://exemplo.com/noticia/juiza"
-  },
-  {
-    title: "PO",
-    img: po,
-    description: "A história do Programa de Proteção a Vítimas e Testemunhas Ameaçadas.",
-    newsUrl: "https://exemplo.com/noticia/po"
-  },
-  {
-    title: "Senha",
-    img: Senha,
-    description: "Investigação sobre vazamento de informações sigilosas do sistema judicial.",
-    newsUrl: "https://exemplo.com/noticia/senha"
-  },
-  {
-    title: "Sylvie",
-    img: SylvieCapa,
-    description: "A trajetória da defensora pública Sylvie e suas batalhas judiciais.",
-    newsUrl: "https://exemplo.com/noticia/sylvie"
+    title: "Trapezista troca carreira no circo e vira produtora",
+    img: noticia5,
+    description: "Equipe de doze mulheres comandada por Joana Henning prepara pelo menos vinte filmes e séries nacionais.",
+    newsUrl: "https://vejasp.abril.com.br/coluna/terraco-paulistano/trapezista-troca-carreira-no-circo-e-vira-produtora-de-filmes-e-series/"
   }
 ];
 

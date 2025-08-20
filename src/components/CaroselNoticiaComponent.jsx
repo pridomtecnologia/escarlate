@@ -7,16 +7,21 @@ import aculpa from "../assets/images/aculpa.jpg";
 import chicomendes from "../assets/images/chicomendes.jpg";
 import nascidos from "../assets/images/nascidos.jpg";
 import sequestro from "../assets/images/sequestro.jpg";
+import noticia1 from "../assets/images/noticia1.jpg";
+import noticia2 from "../assets/images/noticia2.jpg";
+import noticia3 from "../assets/images/noticia3.webp";
+import noticia4 from "../assets/images/noticia4.jpg";
+import noticia5 from "../assets/images/noticia5.webp";
+
 
 export default function CaroselNoticiaComponent() {
   const { t } = useLanguage();
 
   const images = [
-    DePerto,
-    aculpa,
+    noticia3,
     chicomendes,
-    nascidos,
-    sequestro,
+    noticia2,
+    noticia5,
   ];
 
     const settings = {

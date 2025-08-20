@@ -2,15 +2,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useLanguage } from "../i18n/LanguageContext";
-import chicomendes from "../assets/images/chicomendes.jpg";
-import nascidos from "../assets/images/nascidos.jpg";
+import internacionalBanner from "../assets/images/internacionalBanner.jpg";
+import internacionalBanner2 from "../assets/images/internacionalBanner2.jpg";
+import internacionalBanner3 from "../assets/images/internacionalBanner3.jpg";
 import monica from "../assets/images/monica1.jpg";
 
 export default function CarouselInternacional() {
   const { t } = useLanguage();
 
   const images = [
-    monica
+    internacionalBanner,
+    internacionalBanner2,
+    internacionalBanner3
   ];
 
     const settings = {
