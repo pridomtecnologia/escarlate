@@ -6,8 +6,9 @@ import Home from "./pages/home/page";
 import Equipe from "./pages/equipe/page";
 import Entretenimento from "./pages/entretenimento/page";
 import Internacional from "./pages/internacional/page";
-// import Servicos from "./pages/Servicos";
-// import Contato from "./pages/Contato";
+import Noticia from "./pages/noticia/page";
+import Contato from "./pages/contato/page";
+
 import "./App.css";
 import logo from "./assets/Escarlate_LogoTransparente-1.png";
 
@@ -33,9 +34,8 @@ export default function App() {
             <Route path="/equipe" element={<Equipe />} />
             <Route path="/entretenimento" element={<Entretenimento />} />
             <Route path="/internacional" element={<Internacional />} />
-            {/* 
-            <Route path="/servicos" element={<Servicos />} />
-            <Route path="/contato" element={<Contato />} /> */}
+            <Route path="/notícias" element={<Noticia />} />
+            <Route path="/contato" element={<Contato />} /> 
           </Routes>
         </Router>
       )}

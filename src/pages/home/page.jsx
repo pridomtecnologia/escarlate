@@ -5,6 +5,7 @@ import NossosNumeros from "../../components/NossosNumeros";
 import ServicesHome from "../../components/ServicesHome";
 import Footer from "../../components/Footer";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
+import WhatsAppComponent from '../../components/WhatsAppComponent';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <PortfolioSection />
       <NossosNumeros />
       <ServicesHome />
+      <WhatsAppComponent />
       <Footer />
       <LanguageSwitcher />
     </>

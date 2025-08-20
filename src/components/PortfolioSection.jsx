@@ -19,6 +19,7 @@ import ocasocelsodaniel from "../assets/images/ocasocelsodaniel.jpg";
 import tiros from "../assets/images/21Tiros.jpg";
 import agentedomedo from "../assets/images/agentedomedo.png";
 import vozes from "../assets/images/vozes.jpg";
+import { Link } from "react-router-dom";
 
 const portfolioItems = {
   pt: [
@@ -83,6 +84,8 @@ export default function PortfolioSection() {
 
       <Button
         variant="contained"
+        component={Link}
+        to={`/entretenimento`}
         sx={{
           mt: 4,
           borderRadius: "3px",

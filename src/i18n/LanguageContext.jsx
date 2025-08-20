@@ -12,7 +12,7 @@ export const useLanguage = () => useContext(LanguageContext);
 
 const labels = {
   pt: {
-    menu: [ "HOME","EQUIPE", "ENTRETENIMENTO", "INTERNACIONAL", "NOTÍCIAS","CONTATO" ],
+    menu: [ "HOME","EQUIPE", "ENTRETENIMENTO", "INTERNACIONAL", "NOTÍCIAS", "CONTATO" ],
     nossosNumeros: "Nossos Números",
     stats: [
       { number: "900", label: "Projetos realizados" },
@@ -50,8 +50,9 @@ const labels = {
       officeHours: "Horário de Atendimento",
       officeDays: "Segunda a sexta das 9h às 18h",
       social: "REDES SOCIAIS",
-      etica: 'Código de Ética',
-      lerEtica: 'Download'
+      etica: 'CÓDIGO DE ÉTICA',
+      lerEtica: 'Download',
+      localizacao: 'LOCALIZAÇÃO'
     },
     teamTitle: "Nossa Equipe",
     team: [
@@ -97,10 +98,25 @@ const labels = {
         bio: "Gisele Vitória é diretora de comunicação da Escarlate. Foi diretora de redação da revista IstoÉ Gente, da qual também participou de sua criação e lançamento. Foi colunista e editora especial da Revista IstoÉ, passando por áreas de política, gente, economia e negócios, comportamento, medicina e cultura. Dirigiu a IstoÉ Platinum, Planeta e Menu. Foi repórter do Jornal do Brasil, O Globo e Rádio Globo. Criou em 2018 o projeto editorial da RoBB Report Brasil, da qual é editora-chefe. Com pós-graduação em direção editorial pela ESPM, é co-autora do livro “A Imprensa entre Antígona e Maquiavel”. Gisele integrou por cinco anos a comissão editorial da ANER. Na Escarlate, é pesquisadora e diretora de produção jornalística da série documental “Quem Matou Celso Daniel”.",
         image: Escarlategisele,
       },
-    ]
+    ],
+    contato: {
+      frase: 'ENTRE EM',
+      frase1: 'CONTATO',
+      info: 'Para falar com a equipe de atendimento,',
+      info2 :'preencha o formulário ou clique no botão de ',
+      info3: 'WhatsApp.',
+      aviso: 'Ao enviar, você está de acordo com as políticas do site.',
+      campoNome: 'Nome',
+      campoTel: 'DDD + Telefone',
+      campoEmail: 'E-mail',
+      campoMensagem: 'Mensagem',
+      enviar: 'Enviar'
+    },
+    desenvolvimento: 'Desenvolvido por ',
+    pridom: 'Pridom'
   },
   en: {
-    menu: [ "HOME","TEAM","ENTERTAINMENT","INTERNATIONAL", "NEWS","CONTACT" ],
+    menu: [ "HOME", "TEAM","ENTERTAINMENT","INTERNATIONAL", "NEWS", "CONTACT"],
     nossosNumeros: "Our Numbers",
     stats: [
       { number: "900", label: "Projects Completed" },
@@ -138,8 +154,9 @@ const labels = {
       officeHours: "Opening Hours",
       officeDays: "Monday to Friday from 9am to 6pm",
       social: "SOCIAL MEDIA",
-      etica: 'Code of Ethics',
-      lerEtica: 'Download'
+      etica: 'CODE OF ETHICS',
+      lerEtica: 'Download',
+      localizacao: 'LOCATION'
     },
     teamTitle: "Our Team",
     team:[
@@ -190,7 +207,21 @@ const labels = {
         bio: "Gisele Vitória is Escarlate’s Communications Director. She was the editor-in-chief of IstoÉ Gente magazine, where she also took part in its creation and launch. She worked as a columnist and special editor at IstoÉ magazine, covering politics, society, economy and business, lifestyle, medicine, and culture. She also directed IstoÉ Platinum, Planeta, and Menu magazines. Gisele was a reporter for Jornal do Brasil, O Globo, and Rádio Globo. In 2018, she created the editorial project for Robb Report Brasil, where she is editor-in-chief. With a postgraduate degree in Editorial Direction from ESPM, she is co-author of the book 'The Press Between Antigone and Machiavelli.' Gisele was a member of the editorial board of ANER for five years. At Escarlate, she is a researcher and editorial production director for the documentary series 'Who Killed Celso Daniel'.",
         image: Escarlategisele,
       }
-    ]
+    ],
+    contato: {
+      frase: 'GET IN TOUCH',
+      info: 'To speak to our customer service team, ',
+      info2: 'fill out the form or click the ',
+      info3: 'WhatsApp button.',
+      aviso: "By submitting, you agree to the site's policies.",
+      campoNome: 'Name',
+      campoTel: 'Area Code + Telephone',
+      campoEmail: 'E-mail',
+      campoMensagem: 'Message',
+      enviar: 'To Send'
+    },
+    desenvolvimento: 'Developed by ',
+    pridom: 'Pridom'
   },
 };
 

@@ -1,12 +1,14 @@
-import CardsComponent from '../../components/CardsComponent';
+import CaroselNoticiaComponent from "../../components/CaroselNoticiaComponent";
+import NoticiaComponent from "../../components/NoticiaComponent";
 import WhatsAppComponent from '../../components/WhatsAppComponent';
 import Footer from "../../components/Footer";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
 
-export default function Equipe() {
+export default function Noticia() {
   return (
     <>
-      <CardsComponent />
+      <CaroselNoticiaComponent />
+      <NoticiaComponent />
       <WhatsAppComponent />
       <Footer />
       <LanguageSwitcher />
